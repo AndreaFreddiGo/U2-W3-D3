@@ -24,7 +24,7 @@ const getBooks = function () {
           <div class="card-body">
             <h5 class="card-title">${book.title}</h5>
             <p class="card-text">Prezzo: ${book.price} $</p>
-            <button class="btn btn-warning border border-1 border-dark shadow-lg">Scarta</button>
+            <button class="btn btn-warning border border-1 border-dark shadow-lg discharge">Scarta</button>
             <button class="btn btn-dark border border-1 border-light shadow-lg">Compra</button>
           </div>
         </div>
