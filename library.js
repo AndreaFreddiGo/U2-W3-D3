@@ -15,17 +15,22 @@ const getBooks = function () {
         const newCard = document.createElement('div')
         newCard.classList.add('col', 'col-6', 'col-md-4', 'col-lg-3')
         newCard.innerHTML = `
-        <div class="card border border-3 border-dark rounded-3 shadow-lg">
+        <div class="card border border-3 border-dark rounded-3 shadow-lg h-100 ">
           <img
             src="${book.img}"
             class="card-img-top"
             alt="book-cover"
           />
-          <div class="card-body">
-            <h5 class="card-title">${book.title}</h5>
-            <p class="card-text">Prezzo: ${book.price} $</p>
-            <button class="btn btn-warning border border-1 border-dark shadow-lg discharge">Scarta</button>
-            <button class="btn btn-dark border border-1 border-light shadow-lg">Compra</button>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+                <h5 class="card-title">${book.title}</h5>
+                <p class="card-text">Prezzo: ${book.price} $</p>
+            </div>
+            <div class='mt-3'>
+                <hr>
+                <button class="btn btn-warning border border-1 border-dark shadow-lg discharge">Scarta</button>
+                <button class="btn btn-dark border border-1 border-dark shadow-lg">Compra</button>
+            </div>
           </div>
         </div>
         `
